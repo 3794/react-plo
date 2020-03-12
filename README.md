@@ -9,7 +9,7 @@ import React from 'react';
 import { createModel } from 'plo'
 import { connect } from 'react-plo'
 
-const [model, sub] = createModel({
+const [counterModel, counterSub] = createModel({
   count: 0, 
   getCount() {
     return this.count
@@ -25,12 +25,12 @@ const [model, sub] = createModel({
 function App() {
   return (
     <div>
-      <button onClick={model.inc}>+</button>
-      <button onClick={model.dec}>-</button>
-      count: {model.getCount()}
+      <button onClick={counterModel.inc}>+</button>
+      <button onClick={counterModel.dec}>-</button>
+      count: {counterModel.getCount()}
     </div>
   );
 }
 
-export default connect([sub])(App);
+export default connect([counterSub])(App);
 ```
