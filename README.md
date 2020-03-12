@@ -1,4 +1,5 @@
-# REACT-PLO
+# React Plo
+## Install
 ```shell
 npm i react-plo
 ```
