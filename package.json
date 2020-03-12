@@ -2,11 +2,15 @@
   "name": "react-plo",
   "version": "0.1.4",
   "description": "",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/babel src --out-file index.js"
   },
+  "keywords": [
+    "plo"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/3794/react-plo.git"
@@ -17,7 +21,8 @@
   },
   "homepage": "https://github.com/3794/react-plo#readme",
   "peerDependencies": {
-    "react": "^16.13.0"
+    "react": "^16.13.0",
+    "plo": "^0.1.9"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
